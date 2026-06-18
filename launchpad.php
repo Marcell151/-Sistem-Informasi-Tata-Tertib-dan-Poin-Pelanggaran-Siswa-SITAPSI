@@ -131,55 +131,19 @@ if (!$cek_ta) {
             </div>
         </div>
 
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-xs font-extrabold text-slate-400 uppercase tracking-widest mb-4">Modul Operasional</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="max-w-md mx-auto">
+            <h2 class="text-xs font-extrabold text-slate-400 uppercase tracking-widest mb-4 text-center">Modul Operasional</h2>
+            <div class="flex justify-center">
                 
-                <a href="sitapsi/views/<?= $folder_tujuan ?>/<?= $file_tujuan ?>.php" class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#000080] transition-all group relative overflow-hidden flex flex-col h-full">
+                <a href="sitapsi/views/<?= $folder_tujuan ?>/<?= $file_tujuan ?>.php" class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#000080] transition-all group relative overflow-hidden flex flex-col w-full text-center items-center">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full transform translate-x-10 -translate-y-10 group-hover:scale-150 transition-transform duration-500 -z-10"></div>
-                    <div class="w-14 h-14 bg-[#000080] text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-blue-900/20 group-hover:scale-110 transition-transform">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div class="w-16 h-16 bg-[#000080] text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-blue-900/20 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-extrabold text-slate-800 mb-2">SITAPSI</h3>
-                    <p class="text-sm text-slate-500 font-medium flex-1">Sistem Tata Tertib. Kelola poin kedisiplinan dan SP.</p>
-                    <div class="mt-6 flex items-center text-[#000080] font-bold text-sm">
-                        Buka Modul <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
-                    </div>
-                </a>
-
-                <a href="#" 
-                   <?php if ($role === 'Admin'): ?>
-                   onclick="return false;"
-                   <?php else: ?>
-                   onclick="alert('Modul Absensi masih dalam tahap pengembangan.')"
-                   <?php endif; ?>
-                   class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm transition-all group relative overflow-hidden flex flex-col h-full <?= ($role === 'Admin') ? 'opacity-40 grayscale cursor-not-allowed pointer-events-none' : 'hover:shadow-xl hover:border-emerald-500 opacity-90' ?>">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-full transform translate-x-10 -translate-y-10 group-hover:scale-150 transition-transform duration-500 -z-10"></div>
-                    <div class="w-14 h-14 bg-emerald-500 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-emerald-900/20 group-hover:scale-110 transition-transform">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                    </div>
-                    <h3 class="text-xl font-extrabold text-slate-800 mb-2">E-Absensi</h3>
-                    <p class="text-sm text-slate-500 font-medium flex-1">Presensi kehadiran kelas harian (Sakit, Izin, Alpa).</p>
-                    <div class="mt-6 flex items-center text-emerald-600 font-bold text-sm">
-                        <?= ($role === 'Admin') ? '🚫 Akses Terbatas' : 'Buka Modul' ?> <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
-                    </div>
-                </a>
-
-                <a href="#" 
-                   <?php if ($role === 'Admin'): ?>
-                   onclick="return false;"
-                   <?php else: ?>
-                   onclick="alert('Modul Ekstrakurikuler masih dalam tahap pengembangan.')"
-                   <?php endif; ?>
-                   class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm transition-all group relative overflow-hidden flex flex-col h-full <?= ($role === 'Admin') ? 'opacity-40 grayscale cursor-not-allowed pointer-events-none' : 'hover:shadow-xl hover:border-amber-500 opacity-90' ?>">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-full transform translate-x-10 -translate-y-10 group-hover:scale-150 transition-transform duration-500 -z-10"></div>
-                    <div class="w-14 h-14 bg-amber-500 text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-amber-900/20 group-hover:scale-110 transition-transform">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
-                    </div>
-                    <h3 class="text-xl font-extrabold text-slate-800 mb-2">SI-Ekstra</h3>
-                    <p class="text-sm text-slate-500 font-medium flex-1">Manajemen nilai dan kegiatan bakat minat siswa.</p>
-                    <div class="mt-6 flex items-center text-amber-600 font-bold text-sm">
-                        <?= ($role === 'Admin') ? '🚫 Akses Terbatas' : 'Buka Modul' ?> <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                    <h3 class="text-2xl font-extrabold text-slate-800 mb-3">SITAPSI</h3>
+                    <p class="text-sm text-slate-500 font-medium">Sistem Tata Tertib. Kelola poin kedisiplinan dan Surat Peringatan (SP) siswa secara terpadu.</p>
+                    <div class="mt-8 flex items-center justify-center text-[#000080] font-bold text-sm bg-blue-50 py-2 px-6 rounded-xl group-hover:bg-[#000080] group-hover:text-white transition-colors">
+                        Buka Modul SITAPSI <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
                     </div>
                 </a>
 

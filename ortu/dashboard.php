@@ -160,27 +160,6 @@ if ($tahun_aktif) {
                             <svg class="w-5 h-5 text-slate-300 group-hover/btn:text-[#000080] transform group-hover/btn:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
                         </a>
 
-                        <a href="#" onclick="alert('Fitur Absensi sedang dikembangkan oleh tim.')" class="flex items-center p-3.5 bg-white border border-slate-200 hover:border-emerald-500 hover:shadow-md rounded-2xl transition-all group/btn opacity-80">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mr-4 group-hover/btn:scale-110 transition-transform">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                            </div>
-                            <div class="flex-1">
-                                <h4 class="text-sm font-extrabold text-slate-800">Kehadiran (Absensi)</h4>
-                                <p class="text-[11px] font-medium text-slate-500">Sakit, Izin, Alpa semester ini</p>
-                            </div>
-                            <svg class="w-5 h-5 text-slate-300 group-hover/btn:text-emerald-500 transform group-hover/btn:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
-                        </a>
-
-                        <a href="#" onclick="alert('Fitur Ekstrakurikuler sedang dikembangkan oleh tim.')" class="flex items-center p-3.5 bg-white border border-slate-200 hover:border-amber-500 hover:shadow-md rounded-2xl transition-all group/btn opacity-80">
-                            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mr-4 group-hover/btn:scale-110 transition-transform">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
-                            </div>
-                            <div class="flex-1">
-                                <h4 class="text-sm font-extrabold text-slate-800">Ekstrakurikuler</h4>
-                                <p class="text-[11px] font-medium text-slate-500">Kegiatan dan nilai ekstra anak</p>
-                            </div>
-                            <svg class="w-5 h-5 text-slate-300 group-hover/btn:text-amber-500 transform group-hover/btn:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
-                        </a>
                         
                     </div>
                 </div>
